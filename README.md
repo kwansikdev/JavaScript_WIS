@@ -13,3 +13,5 @@
 ​[연산자](https://github.com/kwansikdev/pre_JavaScript/blob/master/06%EA%B0%95%20%EC%97%B0%EC%82%B0%EC%9E%90.md)
 
 [제어문](https://github.com/kwansikdev/PRE_JavaScript/blob/master/07%EA%B0%95%20%EC%A0%9C%EC%96%B4%EB%AC%B8.md)
+
+[타입 변환과 단축 평가](https://github.com/kwansikdev/PRE_JavaScript/blob/master/08%EA%B0%95%20%ED%83%80%EC%9E%85%20%EB%B3%80%ED%99%98%EA%B3%BC%20%EB%8B%A8%EC%B6%95%20%ED%8F%89%EA%B0%80.md)
