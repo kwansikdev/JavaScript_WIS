@@ -19,3 +19,7 @@
 [객체 리터럴](https://github.com/kwansikdev/PRE_JavaScript/blob/master/09%EA%B0%95%20%EA%B0%9D%EC%B2%B4%20%EB%A6%AC%ED%84%B0%EB%9F%B4.md)
 
 [원시 갑과 객체의 비교](https://github.com/kwansikdev/PRE_JavaScript/blob/master/10%EA%B0%95%20%EC%9B%90%EC%8B%9C%20%EA%B0%92%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EB%B9%84%EA%B5%90.md)
+
+[함수](https://github.com/kwansikdev/PRE_JavaScript/blob/master/11%EA%B0%95%20%ED%95%A8%EC%88%98.md)
+
+[스코프](https://github.com/kwansikdev/PRE_JavaScript/blob/master/12%EA%B0%95%20%EC%8A%A4%EC%BD%94%ED%94%84.md)
