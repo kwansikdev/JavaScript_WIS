@@ -28,7 +28,7 @@
 
 [let, const와 블록 레벨 스코프](https://github.com/kwansikdev/PRE_JavaScript/blob/master/14%EA%B0%95%20let%2C%20const%EC%99%80%20%EB%B8%94%EB%A1%9D%20%EB%A0%88%EB%B2%A8%20%EC%8A%A4%EC%BD%94%ED%94%84.md)
 
-[프로퍼티의 정의]()
+[프로퍼티의 정의 _ 정리중-ing...](https://github.com/kwansikdev/PRE_JavaScript/blob/master/15%EA%B0%95%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EC%A0%95%EC%9D%98.md)
 
 [생성자 함수에 의한 객체 생성](https://github.com/kwansikdev/PRE_JavaScript/blob/master/16%EA%B0%95%20%EC%83%9D%EC%84%B1%EC%9E%90%20%ED%95%A8%EC%88%98%EC%97%90%20%EC%9D%98%ED%95%9C%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1.md)
 
