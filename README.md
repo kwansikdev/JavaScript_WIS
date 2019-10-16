@@ -36,8 +36,8 @@
 
 [프로토 타입](https://github.com/kwansikdev/PRE_JavaScript/blob/master/18%EA%B0%95%20%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85.md)
 
-[엄격모드]()
+[엄격모드](https://github.com/kwansikdev/PRE_JavaScript/blob/master/19%EA%B0%95%20%EC%97%84%EA%B2%A9%EB%AA%A8%EB%93%9C.md)
 
-[전역객체]()
+[전역객체](https://github.com/kwansikdev/PRE_JavaScript/blob/master/20%EA%B0%95%20%EC%A0%84%EC%97%AD%20%EA%B0%9D%EC%B2%B4.md)
 
-[this]()
+[this](https://github.com/kwansikdev/PRE_JavaScript/blob/master/21%EA%B0%95%20this.md)
