@@ -41,3 +41,5 @@
 [전역객체](https://github.com/kwansikdev/PRE_JavaScript/blob/master/20%EA%B0%95%20%EC%A0%84%EC%97%AD%20%EA%B0%9D%EC%B2%B4.md)
 
 [this](https://github.com/kwansikdev/PRE_JavaScript/blob/master/21%EA%B0%95%20this.md)
+
+[배열](https://github.com/kwansikdev/PRE_JavaScript/blob/master/26%EA%B0%95%20%EB%B0%B0%EC%97%B4.md)
