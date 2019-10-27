@@ -48,7 +48,7 @@
 
 [정규표현식](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/RegExp%20%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D.md)
 
-[클로저](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/23%EA%B0%95%20%ED%81%B4%EB%A1%9C%EC%A0%80.md)
+[클로저ing...](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/23%EA%B0%95%20%ED%81%B4%EB%A1%9C%EC%A0%80.md)
 
 [클래스](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/24%EA%B0%95%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
 
