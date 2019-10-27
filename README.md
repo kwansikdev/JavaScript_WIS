@@ -52,4 +52,4 @@
 
 [클래스](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/24%EA%B0%95%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
 
-[ES6 함수의 추가 기능](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/26%EA%B0%95%20ES6%20%ED%95%A8%EC%88%98%EC%9D%98%20%EC%B6%94%EA%B0%80%20%EA%B8%B0%EB%8A%A5.md)
+[ES6 함수의 추가 기능ing...](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/26%EA%B0%95%20ES6%20%ED%95%A8%EC%88%98%EC%9D%98%20%EC%B6%94%EA%B0%80%20%EA%B8%B0%EB%8A%A5.md)
