@@ -53,3 +53,10 @@
 [클래스](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/24%EA%B0%95%20%ED%81%B4%EB%9E%98%EC%8A%A4.md)
 
 [ES6 함수의 추가 기능ing...](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/26%EA%B0%95%20ES6%20%ED%95%A8%EC%88%98%EC%9D%98%20%EC%B6%94%EA%B0%80%20%EA%B8%B0%EB%8A%A5.md)
+
+[Spread 문법](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/27%EA%B0%95%20Spread%20%EB%AC%B8%EB%B2%95.md)
+
+[디스트럭처링 할당](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/28%EA%B0%95%20%EB%94%94%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98%EB%A7%81%20%ED%95%A0%EB%8B%B9.md)
+
+[표준 빌트인 객체와 레퍼 객체](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/29%EA%B0%95%20%ED%91%9C%EC%A4%80%20%EB%B9%8C%ED%8A%B8%EC%9D%B8%20%EA%B0%9D%EC%B2%B4%EC%99%80%20%EB%9E%98%ED%8D%BC%20%EA%B0%9D%EC%B2%B4.md)
+
