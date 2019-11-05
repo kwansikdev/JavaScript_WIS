@@ -14,6 +14,7 @@ Ajax(Asynchronous JavaScript and XML)는 자바스크립트를 이용해서 **�
 
 서버로부터 웹페이지가 반환되면 화면 전체를 갱신해야 하는데 페이지 일부만을 갱신하고도 동일한 효과를 볼 수 있는 것이 Ajax이다. 페이지 일부만 로드하여 갱신하면 되므로 빠른 퍼포먼스와 부드러운 화면 표시 효과를 기대할 수 있다.
 
+<img src="https://poiemaweb.com/img/ajax-webpage-lifecycle.png" style="zoom:33%;" />
 
 <br>
 
