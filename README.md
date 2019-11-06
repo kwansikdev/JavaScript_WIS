@@ -66,4 +66,4 @@
 
 [이벤트](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8.md)
 
-[비동기식 처리 모델과 Ajax ing...](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%9D%20%EC%B2%98%EB%A6%AC%20%EB%AA%A8%EB%8D%B8%EA%B3%BC%20Ajax.md)
+[비동기식 처리 모델과 Ajax](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%9D%20%EC%B2%98%EB%A6%AC%20%EB%AA%A8%EB%8D%B8%EA%B3%BC%20Ajax.md)
