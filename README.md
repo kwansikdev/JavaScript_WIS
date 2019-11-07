@@ -69,3 +69,5 @@
 [비동기식 처리 모델과 Ajax](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%9D%20%EC%B2%98%EB%A6%AC%20%EB%AA%A8%EB%8D%B8%EA%B3%BC%20Ajax.md)
 
 [REST(Representational State Transfer) API](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/REST(Representational%20State%20Transfer)%20API.md)
+
+[Promise](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/Promise(%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4).md)
