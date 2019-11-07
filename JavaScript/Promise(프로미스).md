@@ -286,12 +286,12 @@ Promise 객체를 반환한 비동기 함수는 프로미스 후속 처리 메�
 
 Promise는 주로 생성자 함수로 사용되지만 함수도 객체이므로 메소드를 갖을 수 있다. 4가지 정적 메소드를 제공한다.
 
-|      |      |      |
-| ---- | ---- | ---- |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
+| 메소드          | 의미                                                         |
+| --------------- | ------------------------------------------------------------ |
+| Promise.resolve | 존재하는 값을 Promise로 래핑하기 위해 사용                   |
+| Promise.reject  | 존재하는 값을 Promise로 래핑하기 위해 사용                   |
+| Promise.all     | 모든 프로미스를 병렬로 처리 / 결과로 resolve하는 새로운 Promise 반환 |
+| Promise.race    | 가장 먼저 처리된 Promise가 resolve한 결과는 resolve하는 새로운 Primise로 반환 |
 
 <br>
 
@@ -307,13 +307,79 @@ Promise.resolve와 Promise.reject 메소드는 존재하는 값을 **Promise로 
 
 #### 7.2 Promise.all
 
-Promise.all 메소드는 프로미스가 담겨 있는 배열 등의 이터러블을 인자로 전달 받는다. 그리고 전달받은 모든 프로미스를 병렬로 처리하고 그 처리 결과를 resolve하는 새로운 프로미스를 반환한다. 
+Promise.all 메소드는 프로미스가 담겨 있는 배열 등의 이터러블을 인자로 전달 받는다. 
 
-Promise.all 메소드는 전달받은 모든 프로미스를 병렬로 처리한다. 이때 모든 프로미스의 처리가 종료될 때까지 기다린 후 아래와 모든 처리 결과를 resolve 또는 reject한다.
+그리고 전달받은 모든 프로미스를 병렬로 처리하고 그 처리 결과를 resolve하는 새로운 프로미스를 반환한다. 
 
-- 모든 프로미스의 처리가 성공하면 **각각의 프로미스가 resolve한 처리 결과를 resolve하는 새로운 프로미스를 반환**한다. 이때 첫번째 프로미스가 가장 나중에 처리되어도 Promise.all 메소드가 반환하는 프로미스는 첫번째 프로미스가 resolve한 처리 결과부터 차례대로 배열에 담아 그 배열을 resolve하는 새로운 프로미스를 반환한다. 즉, **처리 순서가 보장된다.**
+~~~javascript
+Promise.all([
+  new Promise(resolve => setTimeout(() => resolve(1), 3000)), // 1
+  new Promise(resolve => setTimeout(() => resolve(2), 2000)), // 2
+  new Promise(resolve => setTimeout(() => resolve(3), 1000))  // 3
+]).then(console.log) // [ 1, 2, 3 ]
+  .catch(console.log);
+~~~
+
+
+
+Promise.all 메소드는 전달받은 모든 프로미스를 병렬로 처리한다. 
+
+이때 모든 프로미스의 처리가 종료될 때까지 기다린 후 아래와 모든 처리 결과를 resolve 또는 reject한다.
+
+- 모든 프로미스의 처리가 성공하면 **각각의 프로미스가 resolve한 처리 결과를 resolve하는 새로운 프로미스를 반환**한다. 
+
+  이때 첫번째 프로미스가 가장 나중에 처리되어도 Promise.all 메소드가 반환하는 프로미스는 첫번째 프로미스가 resolve한 처리 결과부터 차례대로 배열에 담아 그 배열을 resolve하는 새로운 프로미스를 반환한다. 
+
+  즉, **처리 순서가 보장된다.**
 
 - 프로미스의 처리가 하나라도 실패하면 가장 먼저 실패한 프로미스가 reject한 에러를 reject하는 새로운 프로미스를 즉시 반환한다.
 
 Promise.all 메소드는 전달 받은 이터러블의 요소가 프로미스가 아닌 경우, Promise.resolve 메소드를 통해 프로미스로 래핑된다.
+
+~~~javascript
+Promise.all([
+  new Promise((resolve, reject) => setTimeout(() => reject(new Error('Error 1!')), 3000)),
+  new Promise((resolve, reject) => setTimeout(() => reject(new Error('Error 2!')), 2000)),
+  new Promise((resolve, reject) => setTimeout(() => reject(new Error('Error 3!')), 1000))
+]).then(console.log)
+  .catch(console.log); // Error: Error 3!
+~~~
+
+
+
+Promise.all 메소드는 전달 받은 이터러블의 요소가 프로미스가 아닌 경우, Promise.resolve 메소드를 통해 프로미스로 래핑된다.
+
+<br>
+
+#### 7.3 Promise.race
+
+Promise.all 메소드와 동일하게 프로미스가 담겨 있는 배열 등의 이터러블을 인자로 전달 받는다.
+
+Promise.all 메소드처럼 모든 프로미스를 병렬 처리하는 것이 아니라 가장 먼저 처리된 프로미스가 resolver한 처리 결과를 resolve하는 새로운 Promise로 반환한다.
+
+~~~javascript
+Promise.race([
+  new Promise(resolve => setTimeout(() => resolve(1), 3000)), // 1
+  new Promise(resolve => setTimeout(() => resolve(2), 2000)), // 2
+  new Promise(resolve => setTimeout(() => resolve(3), 1000))  // 3
+]).then(console.log) // 3
+  .catch(console.log);
+~~~
+
+
+
+에러가 발생하는 경우는 Promise.all 메소드와 동일하게 처리된다. 
+
+즉, Promise.race 메소드에 전달된 프로미스 처리가 하나라도 실해하면 가장 먼저 실패한 프로미스가 reject한 에러를 reject하는 새로운 프로미스를 즉시 반환한다.
+
+~~~javascript
+Promise.race([
+  new Promise((resolve, reject) => setTimeout(() => reject(new Error('Error 1!')), 3000)),
+  new Promise((resolve, reject) => setTimeout(() => reject(new Error('Error 2!')), 2000)),
+  new Promise((resolve, reject) => setTimeout(() => reject(new Error('Error 3!')), 1000))
+]).then(console.log)
+  .catch(console.log); // Error: Error 3!
+~~~
+
+
 
