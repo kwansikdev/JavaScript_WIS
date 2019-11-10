@@ -70,4 +70,6 @@
 
 [REST(Representational State Transfer) API](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/REST(Representational%20State%20Transfer)%20API.md)
 
-[Promise](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/Promise(%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4).md)
+[Promise(프로미스)](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/Promise(%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4).md)
+
+[Module(모듈)](https://github.com/kwansikdev/PRE_JavaScript/blob/master/JavaScript/Module(%EB%AA%A8%EB%93%88).md)
