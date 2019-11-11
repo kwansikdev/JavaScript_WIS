@@ -50,7 +50,7 @@ script 태그에 `type="module"` 어트리뷰트를 추가하면 로드된 자�
 // foo.js
 var x = 'foo';
 var y = 'boo';
-console.log(x);
+console.log(x); // 'foo'
 
 // bar.js
 // 중복 선언이 아니다. 스코프가 다른 변수이다.
