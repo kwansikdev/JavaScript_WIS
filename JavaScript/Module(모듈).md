@@ -47,24 +47,24 @@ script 태그에 `type="module"` 어트리뷰트를 추가하면 로드된 자�
 모듈 내에서 선언한 변수는 모듈 외부에서 참조할 수 없다. 스코프가 다르기 때문이다.
 
 ```javascript
-// foo.js
+// foo.mjs
 var x = 'foo';
 var y = 'boo';
 console.log(x); // 'foo'
 
-// bar.js
+// bar.mjs
 // 중복 선언이 아니다. 스코프가 다른 변수이다.
 var x = 'bar';
 // 다른 모듈에서 선언한 변수는 모듈 외부에서 참조할 수 없다. 스코프가 다르기 때문이다.
-console.log(y); // ReferenceError: x is not defined
+console.log(y); // ReferenceError: y is not defined
 ```
 
 ```html
 <!DOCTYPE html>
 <html>
 <body>
-  <script type="module" src="foo.js"></script>
-  <script type="module" src="bar.js"></script>
+  <script type="module" src="foo.mjs"></script>
+  <script type="module" src="bar.mjs"></script>
 </body>
 </html>
 ```
