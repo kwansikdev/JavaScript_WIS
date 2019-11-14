@@ -84,7 +84,7 @@ console.log(y); // ReferenceError: y is not defined
 선언문 앞에 매번 export 키워드를 붙이는 것이 싫다면 export 대상을 모아 하나의 객체로 구성하여 한번에 export할 수도 있다.
 
 ```javascript
-// lib.js
+// lib.mjs
 // 변수의 공개
 export const pi = Math.PI;
 
@@ -101,7 +101,7 @@ export class Person {
 }
 
 //
-// lib.js
+// lib.mjs
 const pi = Math.PI;
 
 function square(x) {
@@ -127,7 +127,7 @@ export { pi, square, Person };
 export한 모듈을 로드하려면 export한 이름으로 import한다.
 
 ```javascript
-// app.js
+// app.mjs
 // 같은 폴더 내의 lib.js 모듈을 로드. 확장자 js는 생략 가능.
 // 단, 브라우저 환경에서는 모듈의 파일 확장자를 생략할 수 없다.
 import { pi, square, Person } from './lib';
@@ -140,7 +140,7 @@ console.log(new Person('Lee')); // Person { name: 'Lee' }
 각각의 이름을 지정하지 않고 하나의 이름으로 한꺼번에 import할 수도 있다. 이때 import되는 항목은 as 뒤에 지정한 이름의 변수에 할당된다.
 
 ```javascript
-// app.js
+// app.mjs
 import * as lib from './lib';
 
 console.log(lib.pi);         // 3.141592653589793
@@ -151,7 +151,7 @@ console.log(new lib.Person('Lee')); // Person { name: 'Lee' }
 이름을 변경하여 import할 수도 있다.
 
 ```javascript
-// app.js
+// app.mjs
 import { pi as PI, square as sq, Person as P } from './lib';
 
 console.log(PI);    // 3.141592653589793
